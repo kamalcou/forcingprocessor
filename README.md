@@ -5,6 +5,40 @@ The motivation for this tool is NWM data is gridded and stored within netCDFs fo
 
 ![forcing_gif](docs/gifs/T2D_2_TMP_2maboveground_cali.gif)
 
+#Setting Up a Python Virtual Environment on Ubuntu
+To avoid the externally-managed-environment error and ensure you can install packages without affecting the system Python, follow these steps to create a "sandbox" (Virtual Environment).
+
+#1. Install the venv tool
+If you haven't installed the virtual environment module for Python yet, run:
+
+Bash
+```
+sudo apt update && sudo apt install python3-venv
+```
+2. Create your sandbox
+Create a folder (usually named .venv) that will hold your local Python executable and libraries:
+
+Bash
+
+python3 -m venv .venv
+3. Activate the environment
+You need to "enter" the sandbox so your terminal knows to use the local Python version:
+
+Bash
+
+source .venv/bin/activate
+Tip: Once activated, your terminal prompt will usually show (.venv) at the beginning of the line.
+
+4. Install your project in editable mode
+Now that you are inside the virtual environment, you can safely install your package and its dependencies:
+
+Bash
+
+pip install -e .
+Note: You will need to run source .venv/bin/activate every time you open a new terminal window to work on this project. To exit the virtual environment, simply type deactivate.
+```
+
+```
 ## Install
 From root
 ```
