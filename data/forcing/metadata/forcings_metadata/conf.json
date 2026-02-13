@@ -1,0 +1,21 @@
+{
+    "forcing": {
+        "nwm_file": "/home/exouser/forcingprocessor/docs/examples/cfe-nom_example/filenamelist.txt",
+        "gpkg_file": [
+            "/home/exouser/forcingprocessor/docs/examples/cfe-nom_example/cat-1555522_subset.gpkg"
+        ]
+    },
+    "storage": {
+        "storage_type": "local",
+        "output_path": "/home/exouser/forcingprocessor/data/forcing/",
+        "output_file_type": [
+            "csv",
+            "tar"
+        ]
+    },
+    "run": {
+        "verbose": true,
+        "collect_stats": true,
+        "nprocs": 8
+    }
+}
