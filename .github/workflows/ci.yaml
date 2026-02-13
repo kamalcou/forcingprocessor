@@ -29,5 +29,5 @@ jobs:
             uv add --script example.py requests
             uv run example.py
       - name: uv python
-        run: uv python pin 3.12
+        run: uv python pin 3.11
       
