@@ -2,6 +2,6 @@
 build-backend = "setuptools.build_meta"
 requires = [
   "setuptools>=42",
-  "wheel",
-  "python= >=3.12"
+  "wheel"
 ]
+requires-python = ">=3.12"
