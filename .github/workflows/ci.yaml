@@ -28,4 +28,6 @@ jobs:
             echo 'import requests; print(requests.get("https://astral.sh"))' > example.py
             uv add --script example.py requests
             uv run example.py
+      - name: uv python
+        run: uv python pin 3.12
       
