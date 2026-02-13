@@ -21,7 +21,9 @@ jobs:
           version: "latest"
       # - name: Install dependencies
       #   run: uv sync -p 3.12
-      - name: run example using uv 
+        -name: uv version check
+         run: uv version
+        - name: run example using uv 
         run: |
             echo 'import requests; print(requests.get("https://astral.sh"))' > example.py
             uv add --script example.py requests
