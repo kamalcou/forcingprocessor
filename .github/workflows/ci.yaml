@@ -28,5 +28,7 @@ jobs:
             uv run example.py
       - name: uv python
         run: uv python pin 3.11
+      - name: python list check
+        run: uv python list
    
       
