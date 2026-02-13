@@ -31,5 +31,5 @@ jobs:
       - name: uv python
         run: uv python pin 3.11
       - name: Install dependencies
-        run: uv sync -p 3.12
+        run: uv sync -p 3.11
       
